@@ -1,0 +1,16 @@
+.body{
+   background-color: bisque;
+}
+.mainheader{
+    text-decoration: underline;
+    min-width: 1200px;
+    text-align: center;
+    color:brown;
+    font-size: xxx-large;
+}
+
+.avgStart{
+  min-width: 1200px;
+    text-align: center;
+    font-size: x-large;
+}
