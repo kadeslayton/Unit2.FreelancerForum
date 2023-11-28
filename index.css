@@ -1,5 +1,8 @@
 .body{
    background-color: bisque;
+   border: solid 3px black;
+   min-width: 1200px;
+   
 }
 .mainheader{
     text-decoration: underline;
@@ -9,8 +12,27 @@
     font-size: xxx-large;
 }
 
-.avgStart{
+.main{
   min-width: 1200px;
     text-align: center;
     font-size: x-large;
+   
+}
+#table{
+  border-collapse: collapse;
+  min-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  
+}
+th, td{
+  border: 2px black solid;
+  text-align: center;
+  
+}
+
+#tableBody{
+
 }
