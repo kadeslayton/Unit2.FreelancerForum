@@ -30,15 +30,20 @@ function render(array){
     occCell.innerHTML= value.occupation;
     priceCell.innerHTML= value.price;
   });
+  let averageParent = document.getElementById(`averagePrice`);
+  let average = createAvg(array);
+  console.log(average);
+  averageParent.innerHTML = average;
+
 }
 
 //finds the average of all the freelancers prices
 function createAvg(array){
   //assign a constant to avg price ID
- let total = array.reduce((value,current)=>{
-    return value.price += current.price;
- });
- let average = total/array.length;
+ let total = array.reduce((value, current)=>{
+    return  value + current.price;
+ }, 0);
+ let average = Math.floor((total/array.length));
  return average;
 }
 
